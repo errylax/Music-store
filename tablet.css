@@ -1,0 +1,38 @@
+/* header */
+header nav .list,
+header nav .icon{
+    display: none;
+}
+.header-text{
+    width: 550px;
+    margin-left: 1.5rem;
+}
+/* lessons */
+.lessons{
+    width: 85%;
+}
+.lessons div{
+    width: 75%;
+}
+/* new-product */
+.products{
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    row-gap: 2rem;
+}
+.products .product{
+    width: 48%;
+}
+.products .product span{
+    padding: .1rem;
+    width: 57%;
+}
+/* heads-gear */
+.heads .head-3{
+    display: none;
+}
+.heads{
+    grid-template-areas: "head-1 head-1 head-1 head-2 head-2 head-2"
+                         "head-4 head-4 head-4 head-5 head-5 head-5";
+    padding: 0 2rem;
+}

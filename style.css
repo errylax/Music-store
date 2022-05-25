@@ -1,0 +1,295 @@
+/* main styles */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.line{
+    width: 7%;
+    height: .3rem;
+    background-color: rgb(144, 0, 0);
+    margin: auto;
+}
+.light{
+    background-color: rgb(220, 220, 220);
+    color: #333;
+}
+.dark{
+    background-color: #333;
+    color: rgb(220, 220, 220);
+}
+/* header */
+header{
+    width: 100%;
+    height: 600px;
+    background: url("./images/marcus-neto-gioH4gHo0-g-unsplash.jpg");
+    background-size: cover;
+    padding: 2rem 4rem;
+}
+/* header nav */
+nav{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: auto;
+}
+nav p{
+    font-size: 1.5rem;
+    margin-left: .3rem;
+}
+nav .list{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin-left: 2rem;
+}
+nav .list li{
+    margin: 0 .3rem;
+}
+nav .icon{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 100px;
+    justify-content: space-around;
+}
+.header-text{
+    max-width: 570px;
+    color: white;
+    font-size: 2rem;
+    padding-top: 5rem;
+}
+/* lessons */
+.lessons{
+    width: 70%;
+    padding: 1.7rem;
+    margin: auto;
+    color: white;
+    background: linear-gradient(rgba(171, 4, 51, 0.8) 100%,transparent) , url(./images/Rectangle\ 81.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    top: -120px;
+}
+.lessons div p{
+    width: 65%;
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+.lessons div a{
+    background-color: #FF753A;
+    color: white;
+    border-radius: 20px;
+    padding: .6rem 1rem;
+}
+/* new-product */
+.new-product{
+    max-width: 1300px;
+    margin: auto;
+    padding: .5rem 2rem 4rem;
+}
+.new-product>h1,
+.popular-finds>h1{
+    text-align: center;
+    color: rgb(69, 69, 69);
+    margin: 1rem 0 2rem;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.products .product{
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px silver;
+    vertical-align: top;
+    background:linear-gradient(45deg,silver,rgb(230, 230, 230),silver);
+}
+.products .product h2{
+    font-size: 18px;
+}
+.products .product .description{
+    background-color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 20px 20px;
+}
+.products .product .description div{
+    display: flex;
+    justify-content: space-between;
+}
+.products .product p{
+    color: rgb(151, 151, 151);
+    margin-top: .5rem;
+    font-weight: 400;
+}
+.products .product span{
+    color: rgb(88, 88, 88);
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 20px;
+    font-size: 13px;
+    padding: .1rem;
+    width: 45%;
+    margin-top: 2rem;
+    text-align: center;
+}
+.products .product img{
+    width: 100%;
+}
+/* popular finds*/
+.popular-finds{
+    background-color: rgb(228, 228, 228);
+    padding: 5rem 3rem;
+}
+.popular-finds .products{
+    max-width: 1300px;
+    margin: auto;
+}
+/* heads */
+.heads-gear{
+    max-width: 1300px;
+    margin: auto;
+    padding: 4rem 2rem;
+}
+.heads-gear>h1{
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+.heads{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,75vh);
+    grid-template-areas: "head-1 head-1 head-1 head-2 head-2 head-2"
+                         "head-3 head-3 head-4 head-4 head-5 head-5";
+    column-gap: 1rem;
+    row-gap: 2rem;
+}
+.head-image-1{
+    width: 100%;
+    height: 80%;
+    background: url(./images/Rectangle\ 80.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.head-image-2{
+    width: 100%;
+    height: 80%;
+    background: url(./images/Rectangle\ 79.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.head-image-3{
+    width: 100%;
+    height: 80%;
+    background: url(./images/Rectangle\ 85.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.head-image-4{
+    width: 100%;
+    height: 80%;
+    background: url(./images/Rectangle\ 84.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.head-image-5{
+    width: 100%;
+    height: 80%;
+    background: url(./images/Rectangle\ 83.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.head-1{grid-area: head-1;}
+.head-2{grid-area: head-2;}
+.head-3{grid-area: head-3;}
+.head-4{grid-area: head-4;}
+.head-5{grid-area: head-5;}
+
+.heads .head{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.heads .head img{
+    width: 100%;
+    height: 80%;
+}
+.head-caption{
+    padding: 1.6rem;
+    line-height: 2rem;
+}
+/* footer */
+footer{
+    background-color: #333;
+    color: white;
+}
+.top-footer .container{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+.top-footer .container .left{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+.top-footer .container .left ul li{
+    margin: .5rem 0;
+    cursor: pointer;
+}
+.icons{
+    text-align: right;
+}
+i{
+    margin: .8rem .2rem;
+    cursor: pointer;
+}
+.bottom-footer{
+    background-color: #111;
+    padding: 1rem;
+    font-weight: 300;
+    padding-left: 2rem;
+}
+
+
+
